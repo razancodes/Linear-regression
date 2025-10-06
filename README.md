@@ -26,10 +26,19 @@ A from‑scratch linear regression implementation in a single Jupyter notebook u
 - After training, the notebook prints learned weight and bias and plots the fitted line over the data scatter.
 
 ### Math
-- Model: \( \hat{y} = b + w x \).
-- Per‑sample squared loss: \( \ell = (y - \hat{y})^2 \).
-- Gradients: \( \frac{\partial \ell}{\partial w} = 2(\hat{y}-y)x \), \( \frac{\partial \ell}{\partial b} = 2(\hat{y}-y) \).
-- Update rule: \( w \leftarrow w - \eta \frac{\partial \ell}{\partial w} \), \( b \leftarrow b - \eta \frac{\partial \ell}{\partial b} \).
+**Model:**  
+`y_hat = b + w * x`
+
+**Per-sample squared loss:**  
+`loss = (y - y_hat)^2`
+
+**Gradients:**  
+`d(loss)/d(w) = 2*(y_hat - y)*x`  
+`d(loss)/d(b) = 2*(y_hat - y)`
+
+**Update rule:**  
+`w := w - eta * d(loss)/d(w)`  
+`b := b - eta * d(loss)/d(b)`
 
 ### Configuration
 - Learning rate lr: lower to prevent divergence; increase slightly if convergence is slow.
