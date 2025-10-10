@@ -71,5 +71,5 @@ A from‑scratch linear regression implementation in a single Jupyter notebook u
 MIT 
 
 ### Acknowledgments
-Inspired by 3b1b, StatQuest, GregHogg, Google ML Crash course & Muaz.
+Inspired by 3b1b, StatQuest, GregHogg, Google ML Crash course && Muaz.
 
